@@ -1,0 +1,60 @@
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  max-height: 100vh;
+  max-width: 100vw;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Board {
+  height: 10vh;
+  width: 80vw;
+  margin: 5rem;
+  background-color: darkgoldenrod;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.Tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  background-color: white;
+  color: black;
+  box-shadow: 10px 5px 5px black;
+}
+
+.Tile > * {
+  margin: 0.3rem;
+}
+
+.Letter {
+  margin-bottom: 1rem;
+}
+
+.Score-Title {
+  font-weight: 6;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.Score-Button {
+  border-radius: 1rem;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
