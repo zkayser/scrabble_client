@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { togglePieceStatus, updateScore } from './actions';
 import { Board } from './components/Board';
 import { Score } from './components/Score';
+import { Title } from './components/Title';
 import { IN_PLAY, NOT_PLAYED } from './constants';
 
 
@@ -28,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Title />
         <Board tiles={ this.props.tiles } status={ IN_PLAY } onStatusChange={ this.onStatusChange } />
         <Board tiles={ this.props.tiles } status={ NOT_PLAYED } onStatusChange={ this.onStatusChange } />
         <Score score={ this.props.score } getScore={ this.getScore } />

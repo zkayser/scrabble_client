@@ -58,3 +58,13 @@ html, body {
   padding: 1rem;
   font-size: 1.25rem;
 }
+
+.Title {
+  font-weight: 600;
+}
+
+.Title-Text {
+  font-family: cursive;
+  color: crimson;
+  font-size: 2.5rem;
+}
